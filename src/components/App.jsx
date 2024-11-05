@@ -1,23 +1,18 @@
 import { useState } from "react";
 import "./App.css";
+import Description from "./Description";
 
+const [notes, setNotes] = useState({ good: 0, neutral: 0, bad: 0 });
+const updateGood = () => {
+  setNotes({
+    ...notes,
+    good: notes.good + 1,
+  });
+};
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Description />
     </>
   );
 }

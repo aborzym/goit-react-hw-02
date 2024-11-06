@@ -1,8 +1,9 @@
+import css from "./Description.module.css";
 const Description = () => {
   return (
-    <div>
-      <h1>Shit Happens Café</h1>
-      <p>
+    <div className={css.container}>
+      <h1 className={css.title}>Shit Happens Café</h1>
+      <p className={css.description}>
         Please leave your feedback about our service by selecting one of the
         options below.
       </p>

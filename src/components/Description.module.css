@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+  padding: 4rem;
+  color: beige;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../assets/coffee.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  z-index: -1;
+}
+
+.title {
+  text-decoration: underline;
+  text-transform: uppercase;
+}
+
+.description {
+  padding-top: 3rem;
+  font-size: 1.3rem;
+}

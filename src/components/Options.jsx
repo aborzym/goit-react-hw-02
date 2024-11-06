@@ -1,3 +1,5 @@
+import css from "./Options.module.css";
+
 const Options = ({ updateFeedback, reset, showResetButton }) => {
   return (
     <>

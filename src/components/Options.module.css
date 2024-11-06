@@ -1,0 +1,26 @@
+.container {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.good:hover {
+  border-color: rgba(113, 251, 129, 0.509);
+  background-color: rgba(42, 165, 61, 0.136);
+}
+
+.neutral:hover {
+  border-color: rgba(113, 124, 251, 0.509);
+  background-color: rgba(42, 69, 165, 0.136);
+}
+.bad:hover {
+  border-color: rgba(251, 113, 113, 0.509);
+  background-color: rgba(165, 42, 42, 0.136);
+}
+
+.reset:hover {
+  color: #1a1a1a;
+  border-color: #1a1a1a;
+  background-color: bisque;
+}
